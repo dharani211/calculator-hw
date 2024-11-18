@@ -37,6 +37,9 @@ int APIENTRY wWinMain(_In_ HINSTANCE instance, _In_opt_ HINSTANCE prev,
     ::TranslateMessage(&msg);
     ::DispatchMessage(&msg);
   }
+Win32Window::Size size(1280, 720);
+to
+Win32Window::Size size(min_width, min_height)
 
   ::CoUninitialize();
   return EXIT_SUCCESS;
